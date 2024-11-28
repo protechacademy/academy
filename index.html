@@ -7,6 +7,74 @@
     <title>Institute Name</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Adding inline styles for animations -->
+    <style>
+        /* Applying animations */
+
+        /* Keyframes for animations */
+        @keyframes slideInBottomToTop {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textGlow {
+            0% {
+            text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff9900;
+                }
+            50% {
+                text-shadow: 0 0 20px #ff9900, 0 0 30px #ffcc00, 0 0 40px #ff9900;
+                 }
+            100% {
+                text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff9900;
+                }
+}
+
+        /* Logo Styling */
+        header .logo img {
+            height: 100px; /* Bigger logo */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        /* Navigation Links */
+        header nav ul li a {
+            font-size: 18px;
+            animation: slideInBottomToTop 1s ease-in-out;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffa200;
+            animation: textGlow 1.5s infinite alternate;
+        }
+
+        /* Main Heading */
+        .main h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            animation: slideInBottomToTop 2s ease-in-out, textGlow 3s infinite alternate;
+        }
+
+        /* Paragraph Animation */
+        .main p {
+            font-size: 18px;
+            animation: slideInBottomToTop 1.5s ease-in-out;
+        }
+
+        /* Footer Animation */
+        footer p {
+            text-align: center;
+            font-size: 14px;
+            animation: slideInBottomToTop 2s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,14 +94,10 @@
 
     <main>
         <section class="main">
-
-            <h1 class="animated-text">Welcome to PROTECH ACADEMY</h1>
+            <h1>Welcome to PROTECH ACADEMY</h1>
             <p class="animated-text">Welcome to PROTECH ACADEMY, your gateway to unlocking the power of technology and innovation.</p>
             <p class="animated-text">We are thrilled to have you here! At PROTECH ACADEMY, we believe in empowering everyone to achieve their goals. Whether you're a technical enthusiast eager to dive deep into the latest technologies or a non-technical learner looking to build foundational skills, there’s a place for you here.</p>
-            <p class="animated-text">Explore, learn, and grow with our expert-led programs and cutting-edge resources.Let’s shape the future, together!</p>
-
-
-
+            <p class="animated-text">Explore, learn, and grow with our expert-led programs and cutting-edge resources. Let’s shape the future, together!</p>
         </section>
     </main>
 
@@ -43,7 +107,6 @@
 
     <a href="Register.html" class="floating-register-button">Register Now</a>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
