@@ -16,17 +16,17 @@ body {
 
 /* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0); /* Medium transparent black */
+    background-color: rgba(0, 0, 0, 0.7); /* Medium transparent black */
     padding: 15px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: bounceIn 2s ease-in-out;
 }
 
 /* Logo Styling */
 header .logo img {
-    height: 150px; /* Increase height for a bigger logo */
+    height: 100px; /* Increase height for a bigger logo */
     width: auto; /* Maintain aspect ratio */
     /* Remove or comment out the animation */
     /* animation: pulse 2s infinite; */
@@ -357,11 +357,11 @@ footer p {
 }
 /* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0); /* Medium transparent gray */
+    background-color: rgba(169, 169, 169, 0.7); /* Medium transparent gray */
     padding: 15px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: bounceIn 2s ease-in-out;
 }
 
@@ -489,3 +489,24 @@ footer p {
 body {
     text-align: center;
 }
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.4); /* Lighter transparent black */
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.4); /* Lighter transparent black */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUpFooter 2s ease-in-out;
+    margin-top: auto;
+}
+
