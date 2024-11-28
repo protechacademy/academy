@@ -26,7 +26,7 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    height: 150px;
     width: auto;
     animation: pulse 2s infinite;
 }
@@ -234,4 +234,23 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.4); /* Lighter transparent black */
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.4); /* Lighter transparent black */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUpFooter 2s ease-in-out;
+    margin-top: auto;
 }
