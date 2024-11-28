@@ -26,7 +26,7 @@ header {
 
 /* Logo Styling */
 header .logo img {
-    height: 100px; /* Increase height for a bigger logo */
+    height: 150px; /* Increase height for a bigger logo */
     width: auto; /* Maintain aspect ratio */
     /* Remove or comment out the animation */
     /* animation: pulse 2s infinite; */
