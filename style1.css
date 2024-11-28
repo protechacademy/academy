@@ -28,7 +28,7 @@ header {
 header .logo img {
     height: 150px;
     width: auto;
-    animation: pulse 2s infinite;
+    
 }
 
 nav ul {
@@ -235,6 +235,10 @@ footer {
 footer p {
     font-size: 14px;
 }
+
+
+
+/* Header Styling */
 header {
     background-color: rgba(0, 0, 0, 0.4); /* Lighter transparent black */
     padding: 15px;
@@ -254,3 +258,4 @@ footer {
     animation: slideUpFooter 2s ease-in-out;
     margin-top: auto;
 }
+
