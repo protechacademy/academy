@@ -16,11 +16,11 @@ body {
 
 /* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Medium transparent black */
+    background-color: rgba(0, 0, 0, 0); /* Medium transparent black */
     padding: 15px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     animation: bounceIn 2s ease-in-out;
 }
 
@@ -357,11 +357,11 @@ footer p {
 }
 /* Header Styling */
 header {
-    background-color: rgba(169, 169, 169, 0.7); /* Medium transparent gray */
+    background-color: rgba(0, 0, 0, 0); /* Medium transparent gray */
     padding: 15px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     animation: bounceIn 2s ease-in-out;
 }
 
