@@ -1,0 +1,756 @@
+/* General Styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('assets/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Keeps the image centered */
+    background-attachment: fixed; /* Makes the background image stay fixed during scroll */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeBackground 8s infinite;
+}
+
+/* Other styles remain unchanged */
+header {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s ease-in-out;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: pulse 2s infinite;
+}
+
+/* Add any other styles below as needed */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    animation: fadeInLinks 2s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Registration Section */
+.registration {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInSection 1.5s ease-in-out;
+}
+
+.registration h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.registration p {
+    font-size: 16px;
+    color: #555;
+    animation: fadeInParagraph 2s ease-in;
+}
+
+.registration .animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: slideUp 2s ease-in-out;
+}
+
+.registration .animated-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUpFooter 2s ease-in-out;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeBackground {
+    0% {
+        background-color: #f4f4f4;
+    }
+    50% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #f4f4f4;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeInLinks {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpFooter {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* Animation for text effects */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textColorChange {
+    0% {
+        color: #333;
+    }
+    50% {
+        color: #ff5722;
+    }
+    100% {
+        color: #333;
+    }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Applying animations */
+.main h1 {
+    font-size: 36px;
+    font-weight: bold;
+    animation: textFadeIn 2s ease-in-out, textColorChange 5s infinite;
+}
+
+.main p {
+    font-size: 18px;
+    animation: textFadeIn 3s ease-in-out;
+}
+
+.register-now h2 {
+    font-size: 28px;
+    animation: bounceText 2s ease-in-out infinite alternate;
+}
+
+.register-now p {
+    font-size: 16px;
+    animation: textFadeIn 2s ease-in-out;
+}
+/* Animations */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+}
+
+/* Applying animations to elements */
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: bounceText 2s infinite alternate;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    animation: textFadeIn 1s ease-in-out;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+    animation: glow 1.5s infinite alternate;
+}
+
+.contact h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    animation: textFadeIn 2s ease-in-out, glow 3s infinite alternate;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: center;
+    animation: textFadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    animation: textFadeIn 2s ease-in;
+}
+/* Animations */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 20px #007bff;
+    }
+    50% {
+        text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+    }
+    100% {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 20px #007bff;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Applying animations */
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: bounceText 2s infinite alternate;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    animation: textFadeIn 1s ease-in-out;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+    animation: glow 1.5s infinite alternate;
+}
+
+.courses h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    animation: textFadeIn 2s ease-in-out, glow 3s infinite alternate;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: textFadeIn 1.5s ease-in-out;
+}
+
+.courses ul li {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    animation: textFadeIn 2s ease-in;
+}
+/* Animations */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Applying animations */
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: bounceText 2s infinite alternate;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    animation: textFadeIn 1s ease-in-out;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+    animation: glow 1.5s infinite alternate;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    animation: textFadeIn 2s ease-in-out, glow 3s infinite alternate;
+}
+
+.about p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    animation: textFadeIn 2s ease-in;
+}
+/* Animations */
+@keyframes slideInBottomToTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Applying animations */
+.about p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    animation: slideInBottomToTop 1.5s ease-in-out;
+}
+/* Animations */
+@keyframes slideInBottomToTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 20px #ff5722;
+    }
+}
+
+/* Applying animations */
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: bounceText 2s infinite alternate;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    animation: slideInBottomToTop 1s ease-in-out;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+.courses h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideInBottomToTop 2s ease-in-out, textGlow 3s infinite alternate;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: slideInBottomToTop 1.5s ease-in-out;
+}
+
+.courses ul li {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInBottomToTop 1.5s ease-in-out;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    animation: slideInBottomToTop 2s ease-in-out;
+}
+
+/*index file*/
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeBackground 8s infinite;
+}
+
+header {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s ease-in-out;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    animation: pulse 2s infinite;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    animation: fadeInLinks 2s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Animations for Text */
+.animated-text {
+    animation: textFadeIn 3s ease-in-out;
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Register Button */
+.floating-register-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-register-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUpFooter 2s ease-in-out;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Additional Animations */
+@keyframes fadeBackground {
+    0% {
+        background-color: #f4f4f4;
+    }
+    50% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #f4f4f4;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideUpFooter {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
