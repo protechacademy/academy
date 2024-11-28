@@ -24,10 +24,12 @@ header {
     animation: bounceIn 2s ease-in-out;
 }
 
+/* Logo Styling */
 header .logo img {
-    height: 50px;
-    width: auto;
-    animation: pulse 2s infinite;
+    height: 100px; /* Increase height for a bigger logo */
+    width: auto; /* Maintain aspect ratio */
+    /* Remove or comment out the animation */
+    /* animation: pulse 2s infinite; */
 }
 
 /* Navigation */
@@ -149,10 +151,12 @@ footer p {
 }
 
 /* Applying animations */
+/* Logo Styling */
 header .logo img {
-    height: 50px;
-    width: auto;
-    animation: bounceText 2s infinite alternate;
+    height: 100px; /* Increase height for a bigger logo */
+    width: auto; /* Maintain aspect ratio */
+    /* Remove or comment out the animation */
+    /* animation: pulse 2s infinite; */
 }
 
 header nav ul li a {
@@ -219,12 +223,13 @@ header {
     animation: bounceIn 2s ease-in-out;
 }
 
+/* Logo Styling */
 header .logo img {
-    height: 50px;
-    width: auto;
-    animation: pulse 2s infinite;
+    height: 100px; /* Increase height for a bigger logo */
+    width: auto; /* Maintain aspect ratio */
+    /* Remove or comment out the animation */
+    /* animation: pulse 2s infinite; */
 }
-
 nav ul {
     list-style: none;
     padding: 0;
